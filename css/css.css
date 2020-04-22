@@ -116,6 +116,7 @@ color: #EEE9E9
 }
 .foo1 {
 float: left;
+position: relative;
 padding-right: 200px;	
 padding-left: 230px;
 
