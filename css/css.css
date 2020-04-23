@@ -108,11 +108,11 @@ footer p {
 color: #EEE9E9
 }
 #footer{
-	
 	background-color: #252323;
-	height: 60px;
-	width: 100%;
-	
+    height: 252px;
+    width: 100%;
+    top: 1727px;
+    position: absolute;
 }
 .foo1 {
 float: left;
