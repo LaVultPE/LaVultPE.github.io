@@ -202,6 +202,31 @@ padding-left: 347px;
 	top: 638px;
 	padding-left: 125px;
 }
+.ul7 ul li
+{
+	display: inline-block;
+
+}
+.ul7 img {
+float: left;
+	padding-left: 19px;
+}
+.text8 {
+	position: absolute;
+	color: #ffffff;
+	height: 60px;
+	width: 100%;
+	padding-left: 50px;
+	top:1050px;
+
+}
+.info8 {
+	padding: 50px;
+	font-size: 15px;
+	float: left;
+	padding-left: 210px;
+
+}
 .foo1{ width: 190px;
 	height: 190px;
 }
@@ -216,7 +241,7 @@ color: #EEE9E9
 	background-color: #252323;
     height: 252px;
     width: 100%;
-    top: 1007px;
+    top: 1200px;
     position: absolute;
 }
 .foo1 {
