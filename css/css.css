@@ -4,8 +4,12 @@ body{
 	margin: 0px;
 	overflow-x: hidden; 
 	font-family: Orator std;
+	position: absolute;
 	background-color: #252323;
 
+}
+ul li a{
+	color: #f3f3f3;
 }
 body img {
 	display: block;
@@ -30,7 +34,6 @@ width: 20%;
  display: block;
 }
 .opções ul li{
-	color:	#F5F5F5;
 	margin-left: 20px;
 	display: inline-block;
 	float:left;
