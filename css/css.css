@@ -1,139 +1,48 @@
+/*
+Geral
+*/
 body{
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	overflow-x: hidden; 
-	font-family: Orator std;
-	position: absolute;
-	background-color: #252323;
-
+    font-family: Orator std;
 }
-ul li a{
-	color: #f3f3f3;
+h1,h2,h3{
+    margin: 0;
+    font-family: Orator std;
+    font-weight: 700;
 }
-body img {
-	display: block;
+/* 
+Navegação
+*/
+nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background-color: #252323;
 }
-
-.menu-principal {
-	
-	background-color: #252323;
-	height: 60px;
-	width: 100%;
+nav > a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 28px;
 }
-
-main {
-	margin: 0 auto;
-	position: relative;
-}
-.logo {
-padding: 15px;
-padding-left: 300px;
-width: 20%;
- float:left ;
- display: block;
-}
-.opções ul li{
-	margin-left: 20px;
-	display: inline-block;
-	float:left;
-
-}
-.opções {
-	width: 50%;
-	float: right;
-	text-transform: uppercase;
-		font-size: 17px;
-		padding: 5px;
-}
-.opções ul li a {
-	text-decoration: none;
-}
-.opções ul li a:hover {
-	text-decoration: underline;
-}
-.obv {background-color: #F5F5F5;
-	height: 300px;
-		padding: 80px;
-	
-}
-.imgs1 {
-float: left;
-padding-right: 100px;	
-padding-left: 230px;
-
-}
-.imgs2 {
-	float: left;
-	padding-right: 100px;
-
-}
-.imgs3 {
-	float: left;
-	padding-right: 100px;
-}
-.obv h3 {
-	color:#818181;
-}
-.obv p {
-	color: #9a9a9a;
-	width: 200px;
-	height: 200px;
-}
-.traje img { 
-
-}
-.btn { 
-	top: -720px;
-	left: 90%;
-    right: 2px;
-    z-index: 9;
-    position: relative;
-	font-size: 38px;
-	background-color: transparent;
-	color: white;
-	border: none;
-	cursor: pointer;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%,-50%);
-	padding:12px 24px;
-	font-family: Orator std;
-	border-radius: 5px;
-	}
-.foo1{ width: 190px;
-	height: 190px;
-}
-
-footer h3 {
-	color: #f3f3f3;
-}
-footer p {
-color: #EEE9E9
-}
-#footer{
-	background-color: #252323;
-    height: 252px;
+nav ul{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    top: 1727px;
-    position: absolute;
 }
-.foo1 {
-float: left;
-position: relative;
-padding-right: 200px;	
-padding-left: 230px;
-
+nav ul li{
+    text-align: center;
+    width: 100%;
 }
-.foo2 {
-	float: left;
-	padding-right: 200px;
-
-
-}
-
-.foo3{
-	float: left;
-	padding-right: 200px;
+nav ul li a {
+    font-size: 17px;
+    display: inline-block;
+    padding:10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f3f3f3;
 }
 button.slick-prev{
 	font-size: 0px;
@@ -164,9 +73,6 @@ button.slick-next{
 .slick-list{
 	width: 100%!important;
 }
-.slick-initialized{
-	overflow-x: hidden;
-}
 .slick-dots li button{
 	font-size: 0px;
 	border: 5px solid #ffffff;
@@ -177,7 +83,7 @@ button.slick-next{
 	cursor: pointer;
 }
 .slick-dots{
-	margin: 0 auto;
+    margin: 0 auto;
     position: absolute;
     left: 44%;
     top: 88%;
@@ -189,7 +95,145 @@ li.slick-active button {
 	padding-left: 10px;
 	display: inline-block;
 }
-.imagens{
-	left: 14%;
-	position: relative;
+#traje {
+    background-image: url("../img/slideTRA.jpg");
+    background-repeat: round;
+    flex-direction: column;
+    text-align: center;
+    padding: 19px 0px 44%;
 }
+#traje .trajeh1{
+    color: #ffffff;
+}
+.obv{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.creditos{
+padding: 10px ;
+display: flex;
+flex-direction: row;
+background-color: #252323;
+color: #f3f3f3;
+justify-content: space-around;
+}
+.creditos p{
+    margin: 0;
+}
+.Equipe{
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+   display: flex;
+}
+.social h3{
+    margin-bottom: 13px;
+}
+.social p{
+    margin-top: 13px;
+}
+.social .instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.social .whatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    /* 
+    MIDIA QUERY 
+    */
+    @media only screen and (max-width: 700px) {
+        .Equipe{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        #traje{
+        background-image: url("../img/slideTRA.jpg");
+        background-repeat: round;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0px 0px 44%;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .social .instagram{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 3px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        nav {
+        flex-direction: row;
+        justify-content: space-around;
+        }
+        nav ul{
+            flex-direction: row;
+            width: 70%;
+        }
+        .obv{
+            margin: 0;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            align-items: flex-start;
+            background-color: #F5F5F5;
+            align-items: center;
+            height: 300px;
+            padding: 80px 186px;
+        }
+        .obv div{
+            flex-grow: 1;
+            flex-basis: 150px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+    .imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+    /*
+    INFO
+    */
+    .zoom img {
+        padding: 15px;
+        display: flex;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s
+    }
+    .zoom:hover img {
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+    }
+    .zoom {
+        display: flex;
+        width: 207px;
+    }
+    .text {
+        color: #000000;
+        height: 100px;
+        width: 100%;
+        padding-left: 14px;
+        margin: auto;
+    }
+    .imagens{
+        display: flex;
+        flex-direction: column;
+    }
