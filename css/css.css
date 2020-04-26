@@ -2,7 +2,9 @@
 Geral
 */
 body{
-    font-family: Orator std;
+   font-family: orator-std, monospace;
+   font-style: normal;
+   font-weight: 400;
 }
 h1,h2,h3{
     margin: 0;
