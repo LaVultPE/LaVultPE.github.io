@@ -16,35 +16,38 @@ Navegação
 */
 nav{
     display:flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     text-decoration: none;
     background-color: #252323;
+    justify-content: space-around;
+    height: 60px;
 }
-nav > a {
+nav a {
     color: #ffffff;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 43px;
 }
 nav ul{
     list-style: none;
-    padding: 0%;
+    /* padding: 0%; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
+    text-transform: uppercase;
+
 }
 nav ul li{
-    text-align: center;
-    width: 100%;
+    /* text-align: center;
+    width: 100%; */
 }
 nav ul li a {
     font-size: 17px;
     display: inline-block;
-    padding:10px 0;
-    width: 100%;
+    /* padding:10px 0;
+    width: 100%; */
     text-decoration: none;
     color: #f3f3f3;
+    margin-left: 17px;
 }
 button.slick-prev{
 	font-size: 0px;
@@ -151,91 +154,130 @@ justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
-    /* 
-    MIDIA QUERY 
-    */
-    @media only screen and (max-width: 700px) {
-        .Equipe{
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-        }
-    }
-    @media only screen and (max-width: 700px) {
-        #traje{
-        background-image: url("../img/slideTRA.jpg");
-        background-repeat: round;
+.imgvmv{
+    height: 70px;
+    width: 70px;
+}
+/*
+INFO
+*/
+.zoom img {
+    padding: 15px;
+    display: flex;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s
+}
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.zoom {
+    display: flex;
+    width: 207px;
+}
+.text {
+    color: #000000;
+    height: 100px;
+    width: 100%;
+    padding-left: 14px;
+    margin: auto;
+}
+.imagens{
+    display: flex;
+    flex-direction: column;
+}
+.linkinsta{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+/* 
+INVESTIDORES
+*/
+.investidoresh3{
+    margin: 20px;
+}
+/*
+PRODUTO
+*/
+.fonte{
+    padding: 0px 50px 0px 70px;
+}
+.txt{
+    display: flex;
+    padding: 50px;
+}
+
+/* 
+MIDIA QUERY 
+*/
+@media only screen and (max-width: 700px) {
+    .Equipe{
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        margin-top: 30px;
-        padding: 0px 0px 44%;
-        }
+        font-size: 14px;
     }
-    @media only screen and (max-width: 700px) {
-        .social .instagram{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 3px;
-        }
+}
+@media only screen and (max-width: 700px) {
+    #traje{
+    background-image: url("../img/slideTRA.jpg");
+    background-repeat: round;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0px 0px 44%;
     }
-    @media screen and (min-width: 768px) {
-        nav {
+}
+@media only screen and (max-width: 700px) {
+    .social .instagram{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 3px;
+    }
+}
+@media screen and (min-width: 768px) {
+    nav {
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    nav ul{
         flex-direction: row;
-        justify-content: space-around;
-        }
-        nav ul{
-            flex-direction: row;
-            width: 70%;
-        }
-        .obv{
-            margin: 0;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin: 0 auto;
-            align-items: flex-start;
-            background-color: #F5F5F5;
-            align-items: center;
-            height: 300px;
-            padding: 80px 186px;
-        }
-        .obv div{
-            flex-grow: 1;
-            flex-basis: 150px;
-        }
+        /* width: 70%; */
     }
-    @media screen and (min-width: 768px) {
+    .obv{
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        align-items: flex-start;
+        background-color: #F5F5F5;
+        align-items: center;
+        height: 300px;
+        padding: 80px 186px;
+    }
+    .obv div{
+        flex-grow: 1;
+        flex-basis: 150px;
+    }
+}
+@media screen and (min-width: 768px) {
     .imagens{
         flex-direction: column;
         align-items: center;
     }
+}
+@media screen and (max-width: 700px) {
+    .fonte{
+        padding: 0px 90px 0px 16px;
     }
-    /*
-    INFO
-    */
-    .zoom img {
-        padding: 15px;
-        display: flex;
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s
-    }
-    .zoom:hover img {
-     -moz-transform: scale(1.1);
-     -webkit-transform: scale(1.1);
-     transform: scale(1.1);
-    }
-    .zoom {
-        display: flex;
-        width: 207px;
-    }
-    .text {
-        color: #000000;
-        height: 100px;
-        width: 100%;
-        padding-left: 14px;
-        margin: auto;
-    }
-    .imagens{
+    .txt{
         display: flex;
         flex-direction: column;
+        padding: 0px;
     }
+    .maquinas img{
+        height: 400px;
+        width: 100%;
+    }
+}
